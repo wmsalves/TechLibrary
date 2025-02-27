@@ -13,7 +13,7 @@ namespace TechLibrary.Api.UseCases.Users.Register
             When(request => string.IsNullOrEmpty(request.Password) == false, () =>
             {
                 RuleFor(request => request.Password.Length).GreaterThanOrEqualTo(6).WithMessage("A senha deve ter no mínimo 6 caracteres.");
-            }
+            });
         }
     }
 }

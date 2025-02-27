@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace TechLibrary.Exception
 {
-    class TechLibraryException
+    public abstract class TechLibraryException : SystemException
     {
+        public abstract List<string> GetErrorMessages();
+        public abstract HttpStatusCode GetStatusCode();
     }
 }

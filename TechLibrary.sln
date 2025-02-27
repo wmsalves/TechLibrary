@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechLibrary.Api", "TechLibrary.Api\TechLibrary.Api.csproj", "{935DECDA-378E-4820-B5B4-E52EB662566B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{95D576BF-7CA8-4C09-A128-FD32F5DCD7DB} = {95D576BF-7CA8-4C09-A128-FD32F5DCD7DB}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechLibrary.Communication", "TechLibrary.Communication\TechLibrary.Communication.csproj", "{4182EC3D-2D5D-4865-9312-23E92BEB8637}"
 EndProject
