@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TechLibrary.Api.Domain.Entities;
 
-namespace TechLibrary.Api.Infrastructure.DataAccess
+namespace TechLibrary.Api.Infraestructure.DataAccess;
+
+public class TechLibraryDbContext : DbContext
 {
-    public class TechLibraryDbContent : DbContext
+    public DbSet<User> Users { get; set; }
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Checkout> Checkouts { get; set; }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        public DbSet<User> Users { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Data Source=TechLibraryDb.db");
-        }
+        optionsBuilder.UseSqlite("Data Source=TechLibraryDb.db");
     }
 }

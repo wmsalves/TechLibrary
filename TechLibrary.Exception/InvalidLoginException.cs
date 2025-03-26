@@ -1,11 +1,11 @@
 ﻿using System.Net;
 
-namespace TechLibrary.Exception
-{
-    public class InvalidLoginException : TechLibraryException
-    {
-        public override List<string> GetErrorMessages() => ["Email e/ou senha inválidos."];
+namespace TechLibrary.Exception;
 
-        public override HttpStatusCode GetStatusCode() => HttpStatusCode.Unauthorized;
-    }
+public class InvalidLoginException : TechLibraryException
+{
+
+    public InvalidLoginException() : base("Email e/ou senha inválidos.") { }
+    public override List<string> GetErrorMessages() => [Message];
+    public override HttpStatusCode GetStatusCode() => HttpStatusCode.Unauthorized;
 }
