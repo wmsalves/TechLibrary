@@ -2,6 +2,12 @@
 
 **Tech Library** is a RESTful API developed in C# with ASP.NET Core, designed to manage books, users, and checkouts in a library. The application follows modern development practices, including JWT authentication, pagination, use cases, and dependency injection.
 
+<p align="center">
+<kbd>
+  <img alt="Documentação do Swagger" width="1000" src="SwaggerScreenshot.png">
+</kbd>
+</p>
+
 ## 🛠️ Technologies Used
 
 - **C# .NET Core**: Primary framework and language.
